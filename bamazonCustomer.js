@@ -18,7 +18,6 @@ connection.connect(err => {
 })
 
 function displayForSale() {
-    console.log("test");
     connection.query("SELECT * FROM products", function (error, result) {
         if (error) throw error;
         // console.log(result);
